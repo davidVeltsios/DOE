@@ -1,0 +1,18 @@
+[project]
+name = "doe-vorlesung"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = [
+  "numpy",
+  "scipy",        # Statistik-Tests, Optimierung (minimize, linprog)
+  "polars",
+  "pandas",       # statsmodels-Formeln erwarten pandas
+  "statsmodels",  # Regression mit ANOVA/Signifikanz – Kern von DoE
+  "pyDOE3",       # faktorielle, CCD-, Box-Behnken-, LHS-Pläne
+  "matplotlib",
+  "scikit-learn", # MLPRegressor als leichter Einstieg in KNN
+  "jupyter",
+]
+
+[project.optional-dependencies]
+nn = ["tensorflow"]
